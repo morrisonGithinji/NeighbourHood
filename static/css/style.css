@@ -1,0 +1,16 @@
+#pic {
+  float: left;
+  width: calc(20.333% - 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+body{
+  background-color: darkgray;
+}
+
+.prof-card{
+  background-color: bisque;
+}

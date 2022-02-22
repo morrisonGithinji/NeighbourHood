@@ -1,0 +1,56 @@
+{%include 'base.html'%}
+
+{%block content%}
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-7">
+     
+        
+        <!-- Default form login -->
+<form class="text-center border border-light p-5" method="POST" action="">
+  {% csrf_token %}
+  <p class="h4 mb-4">Sign in</p>
+
+  <!-- Email -->
+  <input type="text" name="username" id="defaultLoginFormUsername" value="username" class="form-control mb-4" placeholder="Username">
+
+  <!-- Password -->
+  <input type="password" name="password" id="defaultLoginFormPassword" value="password" class="form-control mb-4" placeholder="Password">
+
+  <div class="d-flex justify-content-around">
+      <div>
+          <!-- Remember me -->
+          <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+              <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+          </div>
+      </div>
+      <div>
+          <!-- Forgot password -->
+          <a href="">Forgot password?</a>
+      </div>
+  </div>
+
+  {%for message in messages%}
+    <p>{{message}}</p>
+  {%endfor%}
+
+  <!-- Sign in button -->
+  <input type="submit" class="submit btn btn-cyan" value="Login" >
+  <!-- Register -->
+  <p>Not a member?
+      <a href="{% url 'register' %}">Register</a>
+  </p>
+
+
+</form>
+<!-- Default form login -->
+     
+     
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+{%endblock%}

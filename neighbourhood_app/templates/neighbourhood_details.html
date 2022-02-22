@@ -1,0 +1,75 @@
+{%include 'base.html'%}
+{%load static%}
+{%load bootstrap4%}
+{%block styles%}
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+{%endblock%}
+{%block content%}
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-3"> 
+      <h2>Emergency Contacts:</h2>
+      <p>Police : {{hood.contact_police}}</p>
+      <p>Health : {{hood.contact_health}}</p>
+      <p>Fire_dept  : {{hood.contact_fire}}</p>
+
+
+      <h2>Business Details</h2>
+      {%for item in biz%}
+      <p>Name: {{item.name}}</p>
+      <p>Address: {{item.address}}</p>
+      {%endfor%}
+    </div>
+    <div class="col-md-6">
+      <!-- Card -->
+<div class="card card-cascade wider reverse">
+
+  <!-- Card image -->
+  <div class="view view-cascade overlay">
+    <img class="card-img-top" src="../../static/images/rakib-reza-9cUmvC0tnpA-unsplash.jpg"
+      alt="Card image cap">
+    <a href="#!">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body card-body-cascade text-center">
+
+    <!-- Title -->
+    <h4 class="card-title"><strong>{{hood.name}}</strong></h4>
+    <!-- Subtitle -->
+    <h6 class="font-weight-bold indigo-text py-2">{{hood.location}}</h6>
+    <!-- Text -->
+      <form action="" method="POST" enctype="multipart/form-data" >
+      {%csrf_token%}
+
+
+
+        {%bootstrap_form form%}
+        <input type="submit" class="btn btn-lime" >
+      </form>
+
+    
+  </div>
+
+</div>
+<!-- Card -->
+    </div>
+    <div class="col-md-3">
+      <h2>Posts: </h2>
+{%for post in posts%}
+<div class="media">
+  <img class="d-flex mr-3 img-fluid " id="pic" src="{{post.profile.profile_pic.url}}" alt="Generic placeholder image">
+  <div class="media-body">
+    <h5 class="mt-0 font-weight-bold">{{post.profile.user.username}}</h5>
+    {{post.post}}
+  </div>
+</div>
+{%endfor%}
+    </div>
+    
+  </div>
+</div>
+{%endblock%}
