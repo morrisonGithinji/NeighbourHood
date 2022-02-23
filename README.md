@@ -1,7 +1,7 @@
 ## Title: Hood-Watch
 
 ## Description: 
-Hood-watch is an application which allows a user to be in the loop ono the happenings in their Neighbourhood. THrough the app they can see the contancts for different utilities in their area.
+NeighbourHood-watch is an application which allows a user to be in the loop ono the happenings in their Neighbourhood. THrough the app they can see the contacts for different utilities in their area.
 
 ## Author:
 Name : Morrison Njenga
