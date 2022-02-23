@@ -1,4 +1,4 @@
-## Title: Hood-Watch
+## Title: NeighbourHood
 
 ## Description: 
 NeighbourHood-watch is an application which allows a user to be in the loop ono the happenings in their Neighbourhood. THrough the app they can see the contacts for different utilities in their area.
