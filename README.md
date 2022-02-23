@@ -4,11 +4,11 @@
 Hood-watch is an application which allows a user to be in the loop ono the happenings in their Neighbourhood. THrough the app they can see the contancts for different utilities in their area.
 
 ## Author:
-Name : Ebenezer Gakuo
+Name : Morrison Njenga
 
-email: gakuoebenezer@gmail.com
+email: Morrison.githinji@student.moringaschool.com
 
-git-hub : [Ebaydroid](https://github.com/Ebay-droid/)
+git-hub : [morrisonGithinji](https://github.com/Ebay-droid/)
 
 ## Installation:
 To use the application, you can use two methods:
