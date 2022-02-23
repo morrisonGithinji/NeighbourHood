@@ -17,6 +17,7 @@ class Neighbourhood(models.Model):
     ('Rongai', 'Rongai'),
     ('Westie', 'Westland'),
     ('Parkie', 'Parkland'),
+    ('syoki', 'syokimau'),
   )
   name = models.CharField(max_length=200,choices=HOODS)
   location = models.CharField(max_length=200, default='Kenya')
