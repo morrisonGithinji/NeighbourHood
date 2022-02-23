@@ -8,7 +8,7 @@ Name : Morrison Njenga
 
 email: Morrison.githinji@student.moringaschool.com
 
-git-hub : [morrisonGithinji](https://github.com/Ebay-droid/)
+git-hub : [morrisonGithinji](https://github.com/morrisonGithinji/)
 
 ## Installation:
 To use the application, you can use two methods:
